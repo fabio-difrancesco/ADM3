@@ -5,11 +5,8 @@ import numpy as np
 import pandas as pd
 from sklearn.cluster import KMeans, AgglomerativeClustering
 from sklearn.mixture import GaussianMixture
-from sklearn.model_selection import KFold
-from sklearn.model_selection import train_test_split
-from sklearn.neighbors import KNeighborsClassifier
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler
-
+from mpl_toolkits.mplot3d import Axes3D # still used for 3d plotting
 
 # 28 clusters
 
