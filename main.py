@@ -123,16 +123,3 @@ for k in [4, 8]:
     plt.ylabel("Weather")
 
 plt.show()
-
-# Agglomerative clustering
-
-model = AgglomerativeClustering(linkage="average", n_clusters=8, affinity='mahalanobis')
-
-model.fit(train_ds)
-
-plt.figure()
-plt.scatter(model.labels_, dataset.values[:, 3], c=model.labels_)  # Plot showing Humidity distributed by clusters
-plt.title("Agglomerative Clustering, Weather and Clusters")
-plt.xlabel("Cluster")
-plt.ylabel("Temperature")
-plt.show()
